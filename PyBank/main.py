@@ -53,15 +53,15 @@ with open(file_path) as csvfile:
     
     # set path for Output to text 
 
-    print("Financial Analysis", file=open("outputpybank1.txt", "a"))   
-    print("----------------" ,file=open("outputpybank1.txt", "a"))
-    print("Total Months:", months, file=open("outputpybank1.txt", "a"))
-    print("Total: $", total, sep='', file=open("outputpybank1.txt", "a"))
-    print('Average Change: $', avgChange, sep='', file=open("outputpybank1.txt", "a"))
+    print("Financial Analysis", file=open("outputpybank.txt", "a"))   
+    print("----------------" ,file=open("outputpybank.txt", "a"))
+    print("Total Months:", months, file=open("outputpybank.txt", "a"))
+    print("Total: $", total, sep='', file=open("outputpybank.txt", "a"))
+    print('Average Change: $', avgChange, sep='', file=open("outputpybank.txt", "a"))
     print('Greatest Increase in Profits:', highestMonth,' ($', highest, ') ',
-    sep = '', file=open("outputpybank1.txt", "a"))
+    sep = '', file=open("outputpybank.txt", "a"))
     print('Greatest Decrease in Profits:', lowestMonth,'  ($', lowest, ') ',
-    sep = '', file=open("outputpybank1.txt", "a"))
+    sep = '', file=open("outputpybank.txt", "a"))
 
 
 
