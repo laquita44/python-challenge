@@ -58,38 +58,17 @@ print(f"Winner:  {candidate_selection[0][0][0]}")
 print("-------------------------")
 
 # -->>  Export results to text file 
-election_file = os.path.join("Output", "out_pypoll.txt")
-with open(election_file, "w") as txt_file:
+voter_info_file = os.path.join("out_pypoll.txt")
+with open(voter_info_file, "w") as outfile:
 
-    txt_file.write("Election Results\n")
-    txt_file.write("-------------------------\n")
-    txt_file.write(f"Total Votes:  {sum(candidate_count.values())}\n")
-    txt_file.write("-------------------------\n")
-    txt_file.write(f"{candidate_selection[0][0][0]}: {holder_one}% ({candidate_selection[0][0][1]})\n")
-    txt_file.write(f"{candidate_selection[0][1][0]}: {holder_two}% ({candidate_selection[0][1][1]})\n")
-    txt_file.write(f"{candidate_selection[0][2][0]}: {holder_three}% ({candidate_selection[0][2][1]})\n")
-    txt_file.write(f"{candidate_selection[0][3][0]}: {holder_four}% ({candidate_selection[0][3][1]})\n")
-    txt_file.write("-------------------------\n")
-    txt_file.write(f"Winner:  {candidate_selection[0][0][0]}\n")
-    txt_file.write("-------------------------\n")   
-
-# -->>  Export results to text file 
-# election_file = os.path.join("Output", "outputpypoll.txt")
-# with open(outputpypoll.txt, "w") as txt_file:
-
-# -->>  Export a text file with the results
-# election_file = os.path.join("outputpypoll.txt")
-# with open(election_file, "w") as outfile:
-
-
-#     outfile.write("Election Results\n")
-#     outfile.write("-------------------------\n")
-#     outfile.write(f"Total Votes:  {sum(candidate_count.values())}\n")
-#     outfile.write("-------------------------\n")
-#     outfile.write(f"{candidate_selection[0][0][0]}: {holder_one}% ({candidate_selection[0][0][1]})\n")
-#     outfile.write(f"{candidate_selection[0][1][0]}: {holder_two}% ({candidate_selection[0][1][1]})\n")
-#     outfile.write(f"{candidate_selection[0][2][0]}: {holder_three}% ({candidate_selection[0][2][1]})\n")
-#     outfile.write(f"{candidate_selection[0][3][0]}: {holder_four}% ({candidate_selection[0][3][1]})\n")
-#     outfile.write("-------------------------\n")
-#     outfile.write(f"Winner:  {candidate_selection[0][0][0]}\n")
-#     outfile.write("-------------------------\n")    
+    outfile.write("Election Results\n")
+    outfile.write("-------------------------\n")
+    outfile.write(f"Total Votes:  {sum(candidate_count.values())}\n")
+    outfile.write("-------------------------\n")
+    outfile.write(f"{candidate_selection[0][0][0]}: {holder_one}% ({candidate_selection[0][0][1]})\n")
+    outfile.write(f"{candidate_selection[0][1][0]}: {holder_two}% ({candidate_selection[0][1][1]})\n")
+    outfile.write(f"{candidate_selection[0][2][0]}: {holder_three}% ({candidate_selection[0][2][1]})\n")
+    outfile.write(f"{candidate_selection[0][3][0]}: {holder_four}% ({candidate_selection[0][3][1]})\n")
+    outfile.write("-------------------------\n")
+    outfile.write(f"Winner:  {candidate_selection[0][0][0]}\n")
+    outfile.write("-------------------------\n")    
